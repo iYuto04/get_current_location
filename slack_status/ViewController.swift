@@ -29,8 +29,6 @@ class ViewController: UIViewController{
     
     @IBAction func getLocation(_ sender: Any) {
         self.locationManager.requestLocation()
-        self.longitudeLabel.text = String(self.longitude)
-        self.latitudeLabel.text = String(self.latitude)
     }
 
 }
@@ -66,10 +64,8 @@ extension ViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for location in locations {
             print("緯度:\(location.coordinate.latitude) 経度:\(location.coordinate.longitude) 取得時刻:\(location.timestamp.description)")
-            self.latitude = Double(location.coordinate.latitude)
-            self.longitude = Double(location.coordinate.longitude)
-            print("latitude is ", Double(location.coordinate.latitude))
-            print("longitude is ", Double(location.coordinate.longitude))
+            self.latitudeLabel.text = String(location.coordinate.latitude)
+            self.longitudeLabel.text = String(location.coordinate.longitude)
         }
     }
 
