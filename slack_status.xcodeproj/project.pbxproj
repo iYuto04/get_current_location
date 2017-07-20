@@ -12,6 +12,7 @@
 		D187E5801F208E3900D0BA23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D187E57E1F208E3900D0BA23 /* Main.storyboard */; };
 		D187E5821F208E3900D0BA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D187E5811F208E3900D0BA23 /* Assets.xcassets */; };
 		D187E5851F208E3900D0BA23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D187E5831F208E3900D0BA23 /* LaunchScreen.storyboard */; };
+		D187E58E1F208EA400D0BA23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D187E58D1F208EA400D0BA23 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D187E5811F208E3900D0BA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D187E5841F208E3900D0BA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D187E5861F208E3900D0BA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D187E58D1F208EA400D0BA23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D187E58E1F208EA400D0BA23 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				D187E5791F208E3900D0BA23 /* slack_status */,
 				D187E5781F208E3900D0BA23 /* Products */,
+				D187E58C1F208EA400D0BA23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				D187E5861F208E3900D0BA23 /* Info.plist */,
 			);
 			path = slack_status;
+			sourceTree = "<group>";
+		};
+		D187E58C1F208EA400D0BA23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D187E58D1F208EA400D0BA23 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -34,5 +34,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>このアプリは、＊＊のため、位置情報を取得します</string>
+
 </dict>
 </plist>
